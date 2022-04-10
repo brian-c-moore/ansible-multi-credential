@@ -126,7 +126,7 @@ In this lab example, there is some IP merge in the inventory when using both 127
 > podman run --name testserver2 -d -p 127.0.0.1:2322:22 alpine-test:latest
 
 Containers can be logged into via SSH
-> ssh -p 2322 testuser@0.0.0.0
+> ssh -p 2222 testuser@0.0.0.0
 
 > ssh -p 2322 testuser@127.0.0.1
 
