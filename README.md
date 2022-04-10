@@ -13,7 +13,7 @@ Example includes:
 **NOTE**
 SSH cannot use a private key stored as a variable. It must be written to a file and given the appropriate file permisisons (0600).
 Keys in this playbook are for demonstration purposes only. Please delete them and create your own as shown below.
-Do not store any passwords or private keys in plain-text, encrypt sensitive information.
+Do not store any passwords or private keys in plain-text. Encrypt sensitive information.
 
 ## Playbooks
 For demonstration purposes this makes use of 3 playbooks:
