@@ -127,10 +127,12 @@ In this lab example, there is some IP merge in the inventory when using both 127
 
 Containers can be logged into via SSH
 > ssh -p 2322 testuser@0.0.0.0
+
 > ssh -p 2322 testuser@127.0.0.1
 
 Use ssh-keygen and ssh-copy-id to create and distribute keys.
 > ssh-keygen
+
 > ssh-copy-id -i testuser2 -p 2322 testuser@127.0.0.1
 
 In this playbook example, the testuser2 private key file is encrypted with ansible-vault as described above and placed into the files/ directory.
