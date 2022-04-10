@@ -7,7 +7,7 @@ This is a demo playbook to illustrate a couple of Ansible concepts:
 2. Using seperate sets of credentials for different inventory groups
 
 Example includes: 
-  - testserver1 group using ansible-vault encrypted ppassword variable
+  - testserver1 group using ansible-vault encrypted password variable
   - testserver2 group using ansible-vault encrypted private key file
 
 **NOTE**
