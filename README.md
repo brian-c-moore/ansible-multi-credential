@@ -122,6 +122,7 @@ In this lab example, there is some IP merge in the inventory when using both 127
 
 ###### Run images with different IP:Ports
 > podman run --name testserver1 -d -p 2222:22 alpine-test:latest
+
 > podman run --name testserver2 -d -p 127.0.0.1:2322:22 alpine-test:latest
 
 Containers can be logged into via SSH
