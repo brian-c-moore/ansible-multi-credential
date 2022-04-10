@@ -62,8 +62,7 @@ ansible_connection=local
 Vault a string as a variable named testserver1_pw
 > ansible-vault encrypt_string --stdin-name ‘testserver1_pw’
 
-Enter vault password
-Enter the string and do not press enter, press ctrl+d per on screen instructions.
+Enter vault password. Enter the string and do not press enter, press ctrl+d per on screen instructions.
 Output will contain the below text which can be pasted directly into a playbook
 Sensitive information will not be left in the bash history
 
