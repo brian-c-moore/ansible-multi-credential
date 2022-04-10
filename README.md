@@ -96,9 +96,7 @@ Ansible copy module will decrypt the file at destination while leaving the origi
 Playbooks are written restrict to localhost to unpack without distributing private to other hosts.
 
 From documentation:
-```
 If you pass an encrypted file as the src argument to the copy, template, unarchive, script or assemble module, the file will not be encrypted on the target host (assuming you supply the correct vault password when you run the play).
-```
 
 ## Additional Notes
 This is just one solution offered. Key files or other senstive could be stored in centralized vaults such as HashiCorp Vault. Ansible vault is used to demonstrate the concept.
