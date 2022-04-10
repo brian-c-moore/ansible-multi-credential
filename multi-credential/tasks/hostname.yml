@@ -1,0 +1,10 @@
+- name: Get hostname
+  shell: hostname
+  register: container_hostname
+
+
+- name: Debug Hostname
+  ansible.builtin.debug:
+    msg:
+    - "Container hostname: {{ container_hostname.stdout }}"
+

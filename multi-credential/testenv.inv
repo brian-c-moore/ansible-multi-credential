@@ -1,0 +1,11 @@
+[testserver1]
+0.0.0.0
+
+[testserver2]
+127.0.0.1
+
+[ansible]
+localhost
+
+[ansible:vars]
+ansible_connection=local

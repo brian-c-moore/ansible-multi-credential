@@ -1,0 +1,15 @@
+- name: Decrypt Vaulted Key Files
+  hosts: localhost
+  gather_facts: false
+  connection: local
+  tasks:
+
+  - name: Decrypting file
+    copy:
+      src: files/testserver2
+      dest: ~/.ssh/testserver2
+      mode: 0600
+      owner: "{{ ansible_user }}"
+      group: "{{ ansible_user }}"
+      force: yes
+      decrypt: yes

@@ -1,0 +1,10 @@
+- name: Remove Decrypted Key Files
+  hosts: localhost
+  gather_facts: false
+  connection: local
+  tasks:
+
+  - name: Remove Decrypted Key Files
+    file:
+      path: ~/.ssh/testserver2
+      state: absent

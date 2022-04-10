@@ -1,0 +1,5 @@
+- name: Ping
+  ansible.builtin.ping:
+
+- name: Get hostname
+  shell: hostname
