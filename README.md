@@ -93,7 +93,7 @@ Only leaves a decrypted file, removes the encrypted file.
 > ansible-vault decrypt testuser2
 
 Ansible copy module will decrypt the file at destination while leaving the original encrypted file intact. 
-Playbooks are written restrict to localhost to unpack without distributing private to other hosts.
+Playbook is written to restrict tasks to localhost to decrypt without distributing private key to other hosts.
 
 From documentation:
 If you pass an encrypted file as the src argument to the copy, template, unarchive, script or assemble module, the file will not be encrypted on the target host (assuming you supply the correct vault password when you run the play).
