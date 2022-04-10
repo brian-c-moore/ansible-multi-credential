@@ -22,8 +22,7 @@ For demonstration purposes this makes use of 3 playbooks:
 3. key_cleanup.yml - This file removes the local decrypted copies of the private key file.
 
 ###### Usage example: 
-where localuser is the local user account running the playbooks
-Should be run as the ansible_user that the following playbook will be run as for permissions. This playbook only executes against local host without SSH.
+Where localuser is the local user account running the playbooks, e.g. the ansible_user that the following playbook will be run as so file permissions are appropriately set on the private key file. 
 ```
 ansible-playbook -i testenv.inv -k unpack_key.yml --ask-vault-pass -u localuser
 ansible-playbook -i testenv.inv -k multi-credential.yml --ask-vault-pass
