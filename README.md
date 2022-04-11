@@ -46,10 +46,10 @@ The ansible_connection variable is set to local for the ansible host to run the 
 ```
 Inventory
 [testserver1]
-xx.yy.zz.123
+0.0.0.0
 
 [testserver2]
-aa.bb.cc.123
+127.0.0.1
 
 [ansible]
 localhost
