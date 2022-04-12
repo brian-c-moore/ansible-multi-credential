@@ -108,11 +108,16 @@ The "Tips and Tricks" guide below outlines practices for using vaulted variables
 The "Best Practices" guide has improved implimentation of the group_vars file layout.
 
 # Refferences
+Ansible Vault
 https://docs.ansible.com/ansible/latest/user_guide/vault.html
+
+Best Practices
 https://docs.ansible.com/ansible/latest/user_guide/playbooks_best_practices.html
+
+Tips and Tricks
 https://docs.ansible.com/ansible/2.8/user_guide/playbooks_best_practices.html
 
-For Ansible Tower see:
+For Ansible Tower
 https://docs.ansible.com/ansible-tower/latest/html/administration/multi-creds-assignment.html
 
 
