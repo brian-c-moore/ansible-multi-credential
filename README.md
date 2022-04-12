@@ -99,10 +99,22 @@ From documentation:
 If you pass an encrypted file as the src argument to the copy, template, unarchive, script or assemble module, the file will not be encrypted on the target host (assuming you supply the correct vault password when you run the play).
 
 ## Additional Notes
-This is just one solution offered. Key files or other senstive could be stored in centralized vaults such as HashiCorp Vault. Ansible vault is used to demonstrate the concept.
+This is just one solution offered and it is written to illustrate concepts in a simple way, not to be "production ready". Key files or other senstive data could be stored in centralized vaults such as HashiCorp Vault. Ansible vault is used here to demonstrate the concept.
 
-In this example, key files are written to the ansible users .ssh directory in their home folder. This was chosen for demonstration simplicty.
-Additionally, ssh-add could be used to add or remove private keys for the local users.
+In this example, key files are written to the ansible users .ssh directory in their home folder. This was chosen for demonstration simplicty. Additionally, ssh-add could be used to add or remove private keys for the local users.
+
+The "Tips and Tricks" guide below outlines practices for using vaulted variables in the group_vars that are an improvement on the design in this playbook.
+
+The "Best Practices" guide has improved implimentation of the group_vars file layout.
+
+# Refferences
+https://docs.ansible.com/ansible/latest/user_guide/vault.html
+https://docs.ansible.com/ansible/latest/user_guide/playbooks_best_practices.html
+https://docs.ansible.com/ansible/2.8/user_guide/playbooks_best_practices.html
+
+For Ansible Tower see:
+https://docs.ansible.com/ansible-tower/latest/html/administration/multi-creds-assignment.html
+
 
 # Test Environment
 The test environment consists of Alpine containers chosen for their small size. Podman was used instead of docker.
